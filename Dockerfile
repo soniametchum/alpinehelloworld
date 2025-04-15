@@ -2,8 +2,8 @@
 FROM alpine:latest
 
 # Install python and pip
-ENV PIP_BREAK_SYSTEM_PACKAGES 1
-RUN apk add --no-cache --update python3 py3-pip bash
+
+RUN apt add --no-cache --update python3 py3-pip bash
 ADD ./webapp/requirements.txt /tmp/requirements.txt
 
 # Install dependencies
